@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--LIBRERÍA DE ÍCONOS FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--ENLACE LINK A ESTILOS PROPIOS Y TÍTULO-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../icons/favicon.ico" type="image/x-icon">
+    <title>Contacto</title>
+</head>
+<body id="body">
+
+    <!--ESTRUCTURA SEMÁNTICA HTML:5-->
+    <!--N°1 <== HEADER/NAV-->
+    <header id="header">
+        <img class="headerLogo" src="../icons/logo.png" alt="">
+        <nav id="nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="imagenes.html">Imágenes</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="acercaDe.html">Acerca De</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="banner">
+        <article class="banner--article">
+            <img src="icons/logo.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa corporis tenetur officia dignissimos odio blanditiis dolorem deserunt deleniti molestiae id? Temporibus fuga, cumque est magni doloribus architecto quod nobis consequuntur.</p>
+        </article>
+    </section>
+
+    <!--N°2 <== MAIN-->
+    <main id="main">
+        <h1>Página Contacto</h1>
+        <h2>Subtítulo</h2>
+
+
+        <section class="contacto">
+            <section class="contactoMapaForm">
+                <article class="contactoMapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0167125041007!2d-58.3815704!3d-34.603738899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1732813948008!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
+    
+                <form id="form" class="contactoForm" action="https://formspree.io/f/xnnqgrvo"
+                method="POST">
+                    <input type="text" placeholder="Nombre">
+    
+                    <input type="email" placeholder="Email">
+
+                    <div class="contactoRadio">
+                        <div class="radioM">
+                            <label for="m">M</label>
+                            <input type="radio">
+                        </div>
+
+                        <div class="radioF">
+                            <label for="m">F</label>
+                            <input type="radio">
+                        </div>
+                    </div>
+                    
+    
+                    <label for="talles">Talles:</label>
+    
+                    <select name="remeras" id="remeras">
+                        <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                        <option value="XL">Extra Large</option>
+                    </select>
+    
+                    <textarea name="message" id=""></textarea>
+    
+                    <input type="submit" value="ENVIAR">
+                    <input type="reset" value="BORRAR">
+                </form>
+            </section>
+            
+
+            <table class="contactoTabla">
+                <tr>
+                    <th>Talles</th>
+                    <th>Small</th>
+                    <th>Medium</th>
+                    <th>Large</th>
+                    <th>Extra Large</th>
+                </tr>
+
+                <tr>
+                    <th>Maculino</th>
+                    <td>S</td>
+                    <td>M</td>
+                    <td>L</td>
+                    <td>XL</td>
+                </tr>
+
+                <tr>
+                    <th>Femenino</th>
+                    <td>S</td>
+                    <td>M</td>
+                    <td>L</td>
+                    <td>XL</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <!--N°3 <== FOOTER-->
+    <footer id="footer">
+        <section class="footer--logo">
+            <img src="../icons/logo.png" alt="Logo footer LEGO">
+        </section>
+
+        <section class="footer--nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="imagenes.html">Imágenes</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="acercaDe.html">Acerca De</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <article class="nav--Copy">
+                <h2>Axel Henderson</h2>
+                <h2>&copy; Copyright 2024</h2>
+            </article>
+        </section>
+
+        <section class="footer--redes">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </section>
+    </footer>
+    
+</body>
+</html>

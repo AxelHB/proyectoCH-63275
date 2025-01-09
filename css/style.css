@@ -1,0 +1,337 @@
+/*
+ESTO ARTICULA PARA PROPIEDADES COMO MARGIN-PADDING
+
+            |TOP-RIGHT-BOTTOM-LEFT|
+    margin: 10px 15px 20px 25px;
+
+            |T-R-B-L|
+    margin: 20px;
+
+            |T-B / L-R|
+    margin: 20px 10px;
+
+            |T-L-R  - B|
+    margin: 10px 10px 20px
+
+    -----------------------------------
+
+    margin-top:;
+    margin-bottom:;
+    margin-left:;
+    margin-right:;
+    */
+
+
+/*ESTILOS RESET*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    max-width: 1400px;
+}
+
+#main {
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-top: 85px;
+    text-align: center;
+}
+
+ul {
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*///////////////////////////////////////*/
+
+
+/*ESTILOS BODY*/
+#body {
+    max-width: 100%;
+}
+
+/*ESTILOS HEADER*/
+
+
+/*BANNER*/
+#banner {
+    padding-top: 85px;
+    width: 100%;
+    height: 70vh;
+    background-image: url(../images/banner.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner--article {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner--article p {
+
+    width: 400px;
+}
+
+#banner img {
+    width: 150px;
+    height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+/*PAGE CONTACTO*/
+
+/*PAGE CONTACTO*/
+.contacto {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.contactoMapaForm {
+    display: flex;
+}
+
+.contactoMapa {
+    width: 50%;
+}
+
+.contactoForm {
+    
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contactoRadio {
+    display: flex;
+    justify-content: space-around;
+}
+
+.radioF , .radioM {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto {
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+.contactoMapa iframe{
+    width: 300px;
+    height: 300px;
+}
+
+.contactoTabla {
+    width: 100%;
+    height: 100px;
+    padding: 0 50px;
+    border: 1px black solid;
+    border-spacing: 0;
+}
+
+.contactoTabla tr , .contactoTabla td , .contactoTabla th {
+    border: 1px black solid;
+    
+}
+
+.contactoTabla th {
+    background-color: grey;
+    border-collapse: collapse;
+    text-align: left;
+    border: 1px black dotted;
+}
+
+
+
+/*PAGE IMÁGENES*/
+.gridImages {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    grid-template-areas: 
+    "img1   img2    img2    img3"
+    "img4   img4    img5    img5"
+    "img6   img7    img8    img9"
+    ;
+
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.gridImages picture {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.img1 {
+    grid-area: img1;
+    background-image: url(../images/img1.jpg);
+}
+.img2 {
+    grid-area: img2;
+    background-image: url(../images/img1.jpg);
+}
+.img3 {
+    grid-area: img3;
+    background-image: url(../images/img1.jpg);
+}
+.img4 {
+    grid-area: img4;
+    background-image: url(../images/img1.jpg);
+}
+.img5 {
+    grid-area: img5;
+    background-image: url(../images/img1.jpg);
+}
+.img6 {
+    grid-area: img6;
+    background-image: url(../images/img1.jpg);
+}
+.img7 {
+    grid-area: img7;
+    background-image: url(../images/img1.jpg);
+}
+.img8 {
+    grid-area: img8;
+    background-image: url(../images/img1.jpg);
+}
+.img9 {
+    grid-area: img9;
+    background-image: url(../images/img1.jpg);
+}
+
+
+
+
+
+
+
+
+
+/*PAGE EQUIPO*/
+.equipo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.equipo__card {
+    width: 300px;
+    height: 500px;
+    transition: 1s;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.equipo__card:hover {
+    padding-right: 30px;
+    padding-bottom: 10px;
+    filter: drop-shadow(30px 10px 4px #4444dd);
+}
+
+
+.personas--perfil {
+    background-image: url(../images/page-imagenes/persona1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+
+.personas--title {
+    align-self: center;
+}
+
+
+
+.personas--btn {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+/*ESTILOS FOOTER*/
+#footer {
+    margin-top: auto;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer--logo img {
+    width: 100px;
+}
+
+.footer--nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 20px;
+}
+
+.nav--copy {
+    text-align: left;
+}
+
+.footer--redes {
+    display: flex;
+    column-gap: 20px;
+}
+
+.footer--redes i {
+    color: blue;
+    font-size: 50px;
+}
